@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61d977fd-b517-433d-99f9-d8f525b54801" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/my_auth_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa/user/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/dto/LoginRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/handler/LoginSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/jwt/AccessTokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/user/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/user/repository/SocialAccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa/user/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/api/auth/JwtController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/api/user/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/common/config/AppProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/common/config/AppProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/common/entity/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/common/entity/BaseTimeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/common/exception/CustomControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/common/exception/CustomControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/domain/user/dto/UserRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/domain/user/dto/UserResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/domain/user/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/domain/user/entity/SocialProviderType.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/user/entity/SocialProviderType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/domain/user/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/user/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/domain/user/entity/UserSocialAccountEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/user/entity/UserSocialAccountEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/domain/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/domain/user/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/config/AuthProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/config/AuthProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/dao/RefreshTokenDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/dao/RefreshTokenDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/dto/AuthTokenResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/dto/AuthTokenResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/dto/RefreshRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/dto/RefreshRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/entity/CustomOAuth2User.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/entity/CustomOAuth2User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/entity/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/entity/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/filter/JwtAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/handler/CustomAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/handler/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/handler/CustomAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/handler/CustomAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/handler/JwtLogoutSuccessHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/handler/LoginFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/handler/LoginFailureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/handler/LoginSuccessHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/handler/RefreshTokenLogoutHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/handler/SocialSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/handler/SocialSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/jwt/JwtTokenProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/jwt/JwtTokenResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/service/CustomOAuth2UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/service/CustomOAuth2UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/main/java/com/example/demo/security/service/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/java/com/example/demo/security/service/TokenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa/user/src/test/java/com/example/demo/UserApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/msa/user">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="user" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="3KAEfMPa1Sau3eYHEAt5oVovwVi" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="61d977fd-b517-433d-99f9-d8f525b54801" name="변경" comment="" />
+      <created>1790992074973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790992074973</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
