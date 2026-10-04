@@ -19,9 +19,14 @@ public class CustomUserDetailsService  implements UserDetailsService {
 
     @Override
     @Transactional(readOnly = true)
-    public @NonNull UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        UserEntity user = userRepository.findByEmail(email)
+    public @NonNull UserDetails loadUserByUsername(String loginId) throws UsernameNotFoundException {
+        UserEntity user = userRepository.findByEmail(loginId)
                 .orElseThrow(() -> new UsernameNotFoundException("이메일 또는 비밀번호가 올바르지 않습니다."));
+
+        // Or 아이디 혹은 이메일로 로그인
+//        UserEntity user = userRepository.findByLoginId(loginId)
+//                .or(() -> userRepository.findByEmail(loginId))
+//                .orElseThrow(() -> new UsernameNotFoundException("아이디 또는 비밀번호가 올바르지 않습니다."));
 
         return new CustomUserDetails(user);
     }

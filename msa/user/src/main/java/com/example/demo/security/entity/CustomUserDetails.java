@@ -2,7 +2,6 @@ package com.example.demo.security.entity;
 
 import com.example.demo.user.entity.Role;
 import com.example.demo.user.entity.UserEntity;
-import lombok.Getter;
 import lombok.NonNull;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -13,17 +12,14 @@ import java.util.List;
 
 public class CustomUserDetails implements UserDetails {
 
-    @Getter
-    private final Long id;
-    private final String email;
+    private final String sub;
+    private final List<GrantedAuthority> authorities;
     private final String password;
     private final boolean enabled;
     private final boolean accountNonLocked;
-    private final List<GrantedAuthority> authorities;
 
     public CustomUserDetails(UserEntity entity) {
-        this.id = entity.getId();
-        this.email = entity.getEmail();
+        this.sub = String.valueOf(entity.getId());
         this.password = entity.getPassword();
         this.enabled = entity.isEnabled();
         this.accountNonLocked = entity.isAccountNonLocked();
@@ -44,18 +40,18 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public @NonNull String getUsername() {
-        return email;
+        return sub;
+    }
+
+    @Override
+    public @NonNull Collection<? extends GrantedAuthority> getAuthorities() {
+        return authorities;
     }
 
     // 소셜만 가입한 경우 null 가능
     @Override
     public String getPassword() {
         return password;
-    }
-
-    @Override
-    public @NonNull Collection<? extends GrantedAuthority> getAuthorities() {
-        return authorities;
     }
 
     @Override

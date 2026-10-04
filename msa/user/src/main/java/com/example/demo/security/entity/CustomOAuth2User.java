@@ -1,6 +1,7 @@
 package com.example.demo.security.entity;
 
 import com.example.demo.user.entity.UserEntity;
+import com.example.demo.user.entity.UserSocialAccountEntity;
 import org.jspecify.annotations.NullMarked;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.core.user.OAuth2User;
@@ -12,14 +13,19 @@ import java.util.Map;
 @NullMarked
 public class CustomOAuth2User implements OAuth2User {
 
-    private final Map<String, Object> attributes;
+    private final String sub;
     private final List<GrantedAuthority> authorities;
-    private final String email;
+    private final Map<String, Object> attributes;
 
-    public CustomOAuth2User(UserEntity entity, Map<String, Object> attributes) {
+    public CustomOAuth2User(Map<String, Object> attributes, UserEntity user) {
+        this.sub = String.valueOf(user.getId());
         this.attributes = Map.copyOf(attributes);
-        this.authorities = CustomUserDetails.toAuthorities(entity.getRoles());
-        this.email = entity.getEmail();
+        this.authorities = CustomUserDetails.toAuthorities(user.getRoles());
+    }
+
+    @Override
+    public String getName() {
+        return sub;
     }
 
     @Override
@@ -30,10 +36,5 @@ public class CustomOAuth2User implements OAuth2User {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return authorities;
-    }
-
-    @Override
-    public String getName() {
-        return email;
     }
 }

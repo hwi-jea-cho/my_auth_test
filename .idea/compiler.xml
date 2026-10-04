@@ -11,9 +11,29 @@
         <module name="user.test" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.example.demo" target="21" />
+      <module name="com.example.demo.main" target="21" />
+      <module name="com.example.demo.test" target="21" />
+      <module name="demo" target="21" />
+      <module name="demo.main" target="21" />
+      <module name="demo.test" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="apigateway" options="-parameters" />
+      <module name="apigateway.main" options="-parameters" />
+      <module name="apigateway.test" options="-parameters" />
+      <module name="com.example.demo" options="-parameters" />
+      <module name="com.example.demo.main" options="-parameters" />
+      <module name="com.example.demo.test" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="demo.main" options="-parameters" />
+      <module name="demo.test" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="eureka.main" options="-parameters" />
+      <module name="eureka.test" options="-parameters" />
       <module name="user" options="-parameters" />
       <module name="user.main" options="-parameters" />
       <module name="user.test" options="-parameters" />

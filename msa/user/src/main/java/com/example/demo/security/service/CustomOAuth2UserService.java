@@ -40,13 +40,13 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         if (SocialProviderType.NAVER.name().equals(registrationId)) {
             registration = SocialProviderType.NAVER;
             attributes = (Map<String, Object>) oAuth2User.getAttributes().get("response");
-            providerId = registrationId + "_" + attributes.get("id");
+            providerId = attributes.get("id").toString();
             email = attributes.get("email").toString();
             nickname = attributes.get("nickname").toString();
         } else if (SocialProviderType.GOOGLE.name().equals(registrationId)) {
             registration = SocialProviderType.GOOGLE;
             attributes = oAuth2User.getAttributes();
-            providerId = registrationId + "_" + attributes.get("sub");
+            providerId = attributes.get("sub").toString();
             email = attributes.get("email").toString();
             nickname = attributes.get("name").toString();
         } else {
@@ -62,7 +62,7 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
                 .email(email)
                 .build();
         socialAccountRepository.save(socialAccount);
-        return new CustomOAuth2User(user, attributes);
+        return new CustomOAuth2User(attributes, user);
     }
 
     private UserEntity findOrCreateMember(String email, String nickname) {

@@ -1,6 +1,7 @@
 package com.example.demo.security.filter;
 
 import com.example.demo.security.dto.LoginRequestDTO;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.jspecify.annotations.NonNull;
@@ -18,7 +19,7 @@ import java.io.IOException;
 
 public class LoginFilter extends AbstractAuthenticationProcessingFilter {
 
-    public static final String LOGIN_FILTER_URL = "/api/login";
+    public static final String LOGIN_FILTER_URL = "/user/login";
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 

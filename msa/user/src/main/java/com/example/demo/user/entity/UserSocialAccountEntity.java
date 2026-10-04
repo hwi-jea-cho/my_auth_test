@@ -6,10 +6,7 @@ import lombok.*;
 
 @ToString
 @Entity
-@Table(
-        name = "user_social_accounts",
-        uniqueConstraints = @UniqueConstraint(columnNames = {"provider", "provider_id"})
-)
+@Table(name = "user_social_accounts")
 @Getter
 @Builder
 @NoArgsConstructor
